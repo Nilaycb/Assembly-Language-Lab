@@ -12,7 +12,7 @@ C DB "The Sum is : $"
 
 MAIN PROC
     
-    ; The some must be within 0 to 9
+    ; The sum must be within 0 to 9
     
     MOV AX,@DATA
     MOV DS,AX       
