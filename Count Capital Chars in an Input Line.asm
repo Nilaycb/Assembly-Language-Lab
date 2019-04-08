@@ -33,7 +33,7 @@ MAIN PROC
         JLE INCRE
         JMP INPUT
         
-        INCRE:
+    INCRE:
         INC CL
         JMP INPUT    
     
