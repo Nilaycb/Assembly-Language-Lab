@@ -48,104 +48,104 @@ MAIN PROC
     INT 21H
     
     INPUT:
-    MOV AH,9H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET MSG
-    INT 21H
-    MOV DX,OFFSET NL
-    INT 21H
-    
-    MOV AH,1
-    INT 21H
-    
-    CMP AL,'1'
-    JE M1
-    CMP AL,'2'
-    JE M2
-    CMP AL,'3'
-    JE M3
-    CMP AL,'4'
-    JE M4
-    CMP AL,'5'
-    JE M5
-    CMP AL,'6'
-    JE EXIT
-    JMP INPUT
+        MOV AH,9H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET MSG
+        INT 21H
+        MOV DX,OFFSET NL
+        INT 21H
+        
+        MOV AH,1
+        INT 21H
+        
+        CMP AL,'1'
+        JE M1
+        CMP AL,'2'
+        JE M2
+        CMP AL,'3'
+        JE M3
+        CMP AL,'4'
+        JE M4
+        CMP AL,'5'
+        JE M5
+        CMP AL,'6'
+        JE EXIT
+        JMP INPUT
     
     M1:
-    MOV AH,9H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET DETAILS
-    INT 21H
-    MOV DX,OFFSET DETAILS1
-    INT 21H        
-    MOV DX,OFFSET DETAILSEND
-    INT 21H
-    JMP EXIT
+        MOV AH,9H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET DETAILS
+        INT 21H
+        MOV DX,OFFSET DETAILS1
+        INT 21H        
+        MOV DX,OFFSET DETAILSEND
+        INT 21H
+        JMP EXIT
     
     M2:
-    MOV AH,9H
-    MOV DX,OFFSET NL
-    INT 21H 
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET DETAILS
-    INT 21H
-    MOV DX,OFFSET DETAILS2
-    INT 21H        
-    MOV DX,OFFSET DETAILSEND
-    INT 21H
-    JMP EXIT
+        MOV AH,9H
+        MOV DX,OFFSET NL
+        INT 21H 
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET DETAILS
+        INT 21H
+        MOV DX,OFFSET DETAILS2
+        INT 21H        
+        MOV DX,OFFSET DETAILSEND
+        INT 21H
+        JMP EXIT
     
     M3:
-    MOV AH,9H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET DETAILS
-    INT 21H
-    MOV DX,OFFSET DETAILS3
-    INT 21H        
-    MOV DX,OFFSET DETAILSEND
-    INT 21H
-    JMP EXIT
+        MOV AH,9H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET DETAILS
+        INT 21H
+        MOV DX,OFFSET DETAILS3
+        INT 21H        
+        MOV DX,OFFSET DETAILSEND
+        INT 21H
+        JMP EXIT
     
     M4:
-    MOV AH,9H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET DETAILS
-    INT 21H
-    MOV DX,OFFSET DETAILS4
-    INT 21H        
-    MOV DX,OFFSET DETAILSEND
-    INT 21H
-    JMP EXIT
+        MOV AH,9H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET DETAILS
+        INT 21H
+        MOV DX,OFFSET DETAILS4
+        INT 21H        
+        MOV DX,OFFSET DETAILSEND
+        INT 21H
+        JMP EXIT
     
     M5:
-    MOV AH,9H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET NL
-    INT 21H
-    MOV DX,OFFSET DETAILS
-    INT 21H
-    MOV DX,OFFSET DETAILS5
-    INT 21H        
-    MOV DX,OFFSET DETAILSEND
-    INT 21H
-    JMP EXIT
+        MOV AH,9H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET NL
+        INT 21H
+        MOV DX,OFFSET DETAILS
+        INT 21H
+        MOV DX,OFFSET DETAILS5
+        INT 21H        
+        MOV DX,OFFSET DETAILSEND
+        INT 21H
+        JMP EXIT
     
     EXIT:
-    MOV AH,4CH
-    INT 21H
-    MAIN ENDP
+        MOV AH,4CH
+        INT 21H
+        MAIN ENDP
 
 END MAIN
