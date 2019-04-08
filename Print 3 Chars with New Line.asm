@@ -14,7 +14,7 @@ MAIN PROC
     MOV DS,AX       
     
     MOV AH,9H
-    MOV DX,OFFSET MSG       ;PRINT  A
+    MOV DX,OFFSET MSG       ;PRINT  MSG
     INT 21H
     
     MOV AH,1
