@@ -2,7 +2,7 @@
 .STACK 100H
 .DATA
 BUS_INFO_SYS DB "                   Bus Info Sysyem$"
-CHOOSE_BUS DB "Choose your desired Bus from following list: $"
+CHOOSE_BUS DB 10,13,"Choose your desired Bus from following list: $"
 NL DB 10,13,"$"
 PRODUCTS_NAME DB 10,13,"Buses Name: $"
 BAHON DB 10,13,09,"1. Bahon$"
