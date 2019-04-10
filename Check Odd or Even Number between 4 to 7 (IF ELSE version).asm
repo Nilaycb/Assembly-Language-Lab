@@ -5,7 +5,7 @@
 .MODEL SMALL
 .STACK 100H
 .DATA
-MSG DB "Enter a number from 4 to 7: $"
+MSG DB "Enter a number between 4 to 7: $"
 ODD DB 10,13,"Odd.$" 
 EVE DB 10,13,"Even.$"
 AGA DB 10,13,"Enter again: $"
