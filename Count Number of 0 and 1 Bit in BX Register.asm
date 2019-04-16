@@ -27,7 +27,7 @@ MAIN PROC
         JGE RESULT
         ROL BX,1
         INC CX
-        JNC INCRE_DH
+        JNC INCRE_DH        ; Checks CF (Flag) and Jumps if CF=0
         INC AL
         JMP GO
         
