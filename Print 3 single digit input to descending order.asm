@@ -1,3 +1,7 @@
+; @author: Nilay Chandra Barman (https://github.com/Nilaycb)
+; Copyright (c) 2019, All rights reserved.
+; Copyrights licensed under the GNU AGPLv3 License. 
+
 .MODEL SMALL
 .STACK 100H
 .DATA
